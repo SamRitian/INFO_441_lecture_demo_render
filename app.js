@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.static('public'));
 
-app.get('hello', (req, res) => {
+app.get('/hello', (req, res) => {
   const name = req.query.name;
   res.type('html');
   res.send(`
